@@ -1,0 +1,12 @@
+
+-----
+Test: tests/test_scenario_1.py::test_scenario_1 (call)
+Start time: 2024-11-06 15:05:28.611909
+Start name method: Scenario 1 start
+
+
+-----
+Test: tests/test_scenario_1.py::test_scenario_1 (call)
+Start time: 2024-11-06 15:05:59.336683
+Start name method: Scenario 1 start
+

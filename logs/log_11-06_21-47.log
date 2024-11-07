@@ -1,0 +1,22 @@
+
+-----
+Test: tests/test_scenario_1.py::test_scenario_1 (call)
+Start time: 2024-11-06 21:47:38.972618
+Start name method: Scenario 1 start
+
+End time: 2024-11-06 21:47:53.061583
+End name method: Scenario 1 end
+URL: https://tensor.ru/about
+
+-----
+
+-----
+Test: tests/test_scenario_2.py::test_scenario_2 (call)
+Start time: 2024-11-06 21:47:59.578160
+Start name method: Scenario 2 start
+
+End time: 2024-11-06 21:48:09.784602
+End name method: Scenario 2 end
+URL: https://sbis.ru/contacts/41-kamchatskij-kraj?tab=clients
+
+-----

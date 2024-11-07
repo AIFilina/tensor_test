@@ -1,0 +1,35 @@
+
+-----
+Test: tests/test_scenario_1.py::test_scenario_1 (call)
+Start time: 2024-11-06 14:28:41.227049
+Start name method: Scenario 1 start
+
+
+-----
+Error occurred at: 2024-11-06 14:28:50.026549
+Error: Expected URL 'https://sbis.ru/contacts/16-respublika-tatarstan?tab=clients', but got 'https://sbis.ru/contacts'
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 66, in assert_url
+    assert get_url == result, f"Expected URL '{result}', but got '{get_url}'"
+           ^^^^^^^^^^^^^^^^^
+AssertionError: Expected URL 'https://sbis.ru/contacts/16-respublika-tatarstan?tab=clients', but got 'https://sbis.ru/contacts'
+
+
+-----
+
+-----
+Error occurred at: 2024-11-06 14:28:50.343747
+Error: Expected URL 'https://tensor.ru/', but got 'https://sbis.ru/contacts/16-respublika-tatarstan?tab=clients'
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 66, in assert_url
+    assert get_url == result, f"Expected URL '{result}', but got '{get_url}'"
+           ^^^^^^^^^^^^^^^^^
+AssertionError: Expected URL 'https://tensor.ru/', but got 'https://sbis.ru/contacts/16-respublika-tatarstan?tab=clients'
+
+
+-----
+End time: 2024-11-06 14:28:50.379638
+End name method: Scenario 1 end
+URL: https://sbis.ru/contacts/16-respublika-tatarstan?tab=clients
+
+-----

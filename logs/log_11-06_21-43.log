@@ -1,0 +1,17 @@
+
+-----
+Test: tests/test_scenario_1.py::test_scenario_1 (call)
+Start time: 2024-11-06 21:43:42.275275
+Start name method: Scenario 1 start
+
+
+-----
+Test: tests/test_scenario_2.py::test_scenario_2 (call)
+Start time: 2024-11-06 21:43:49.527005
+Start name method: Scenario 2 start
+
+End time: 2024-11-06 21:44:07.419916
+End name method: Scenario 2 end
+URL: https://sbis.ru/contacts/41-kamchatskij-kraj?tab=clients
+
+-----

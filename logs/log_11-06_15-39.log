@@ -1,0 +1,26 @@
+
+-----
+Test: tests/test_scenario_1.py::test_scenario_1 (call)
+Start time: 2024-11-06 15:39:23.414834
+Start name method: Scenario 1 start
+
+
+-----
+Error occurred at: 2024-11-06 15:39:41.214767
+Error: Message: 
+
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 85, in assert_url
+    WebDriverWait(self.driver, 10).until(EC.url_to_be(result))
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+
+-----
+End time: 2024-11-06 15:39:52.344529
+End name method: Scenario 1 end
+URL: https://tensor.ru/about
+
+-----

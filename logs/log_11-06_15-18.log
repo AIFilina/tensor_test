@@ -1,0 +1,90 @@
+
+-----
+Test: tests/test_scenario_1.py::test_scenario_1 (call)
+Start time: 2024-11-06 15:18:52.678538
+Start name method: Scenario 1 start
+
+
+-----
+Error occurred at: 2024-11-06 15:18:59.162365
+Error: Expected URL 'https://sbis.ru/contacts/16-respublika-tatarstan?tab=clients', but got 'https://sbis.ru/contacts'
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 86, in assert_url
+    assert get_url == result, f"Expected URL '{result}', but got '{get_url}'"
+           ^^^^^^^^^^^^^^^^^
+AssertionError: Expected URL 'https://sbis.ru/contacts/16-respublika-tatarstan?tab=clients', but got 'https://sbis.ru/contacts'
+
+
+-----
+
+-----
+Error occurred at: 2024-11-06 15:18:59.910894
+Error: Expected URL 'https://tensor.ru/', but got 'https://sbis.ru/contacts/16-respublika-tatarstan?tab=clients'
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 86, in assert_url
+    assert get_url == result, f"Expected URL '{result}', but got '{get_url}'"
+           ^^^^^^^^^^^^^^^^^
+AssertionError: Expected URL 'https://tensor.ru/', but got 'https://sbis.ru/contacts/16-respublika-tatarstan?tab=clients'
+
+
+-----
+
+-----
+Error occurred at: 2024-11-06 15:19:20.005731
+Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF766B33B05+28005]
+	(No symbol) [0x00007FF766A98400]
+	(No symbol) [0x00007FF76693580A]
+	(No symbol) [0x00007FF766985A3E]
+	(No symbol) [0x00007FF766985D2C]
+	(No symbol) [0x00007FF7669CEA97]
+	(No symbol) [0x00007FF7669ABA7F]
+	(No symbol) [0x00007FF7669CB8B3]
+	(No symbol) [0x00007FF7669AB7E3]
+	(No symbol) [0x00007FF7669775C8]
+	(No symbol) [0x00007FF766978731]
+	GetHandleVerifier [0x00007FF766E2647D+3118813]
+	GetHandleVerifier [0x00007FF766E76CD0+3448624]
+	GetHandleVerifier [0x00007FF766E6CF4D+3408301]
+	GetHandleVerifier [0x00007FF766BFA45B+841403]
+	(No symbol) [0x00007FF766AA345F]
+	(No symbol) [0x00007FF766A9F4D4]
+	(No symbol) [0x00007FF766A9F66D]
+	(No symbol) [0x00007FF766A8EBC9]
+	BaseThreadInitThunk [0x00007FFBF3FC259D+29]
+	RtlUserThreadStart [0x00007FFBF5E4AF38+40]
+
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 37, in scroll_to_element
+    element =  WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, locator)))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF766B33B05+28005]
+	(No symbol) [0x00007FF766A98400]
+	(No symbol) [0x00007FF76693580A]
+	(No symbol) [0x00007FF766985A3E]
+	(No symbol) [0x00007FF766985D2C]
+	(No symbol) [0x00007FF7669CEA97]
+	(No symbol) [0x00007FF7669ABA7F]
+	(No symbol) [0x00007FF7669CB8B3]
+	(No symbol) [0x00007FF7669AB7E3]
+	(No symbol) [0x00007FF7669775C8]
+	(No symbol) [0x00007FF766978731]
+	GetHandleVerifier [0x00007FF766E2647D+3118813]
+	GetHandleVerifier [0x00007FF766E76CD0+3448624]
+	GetHandleVerifier [0x00007FF766E6CF4D+3408301]
+	GetHandleVerifier [0x00007FF766BFA45B+841403]
+	(No symbol) [0x00007FF766AA345F]
+	(No symbol) [0x00007FF766A9F4D4]
+	(No symbol) [0x00007FF766A9F66D]
+	(No symbol) [0x00007FF766A8EBC9]
+	BaseThreadInitThunk [0x00007FFBF3FC259D+29]
+	RtlUserThreadStart [0x00007FFBF5E4AF38+40]
+
+
+
+-----

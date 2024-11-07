@@ -1,0 +1,11 @@
+
+-----
+Test: tests/test_scenario_1.py::test_scenario_1 (call)
+Start time: 2024-11-06 16:01:10.104912
+Start name method: Scenario 1 start
+
+End time: 2024-11-06 16:01:25.828465
+End name method: Scenario 1 end
+URL: https://tensor.ru/about
+
+-----

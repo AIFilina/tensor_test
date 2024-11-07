@@ -1,38 +1,50 @@
-import allure
+# import allure
 
 from base.base_class import Base
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
 
 class Contacts_page(Base):
-
-    # URL
-
-    url_sbis = 'https://sbis.ru/'
-    url_tensor = 'https://tensor.ru/'
+    def __init__(self, driver):
+        super().__init__(driver)
 
     #locators
+    banner_tensor = "//div[contains(@class,'sbisru-Contacts__border-left--border-xm')]//a[@title='tensor.ru']"
+    location = "(//span[contains(@class,'sbis_ru-Region-Chooser__text')])[1]"
 
-    contacts= "//div[text()='Контакты']"
-    # sila_v_lud ="//p[text()='Сила в людях']"
-    # more_detalies = '//*[@id="container"]/div[1]/div/div[5]/div/div/div[1]/div/p[4]/a'
-    # working ="//h2[text()='Работаем']"
-    # pic1 = '//img[@alt="Разрабатываем систему СБИС"]'
-    # pic2 = '//img[@alt="Продвигаем сервисы"]'
-    # pic3 = '//img[@alt="Создаем инфраструктуру"]'
-    # pic4 = '//img[@alt="Сопровождаем клиентов"]'
+    partner_16 = '//div[@title="СБИС - Казань"]'
+    partner_41 = '//div[@title="СБИС - Камчатка"]'
 
-    #getters
+    region_41 ='//span[@title="Камчатский край"]'
+
+    '''Method click by banner ТЕНЗОР'''
+
+    def click_banner_tensor(self):
+        self.click_button(self.banner_tensor)
+        print('Нажат БАНЕР ТЕНЗОР')
+
+    '''Methods check regions '''
+
+    def check_region_16(self):
+        self.assert_word(self.location,'Республика Татарстан')
+
+    def check_region_41(self):
+        self.assert_word(self.location,'Камчатский край')
+
+    '''Methods check partners '''
+
+    def check_partner_16(self):
+        element = self.find_by_xpath(self.partner_16)
+        print(f'There is a partner {element.text}')
+
+    def check_partner_41(self):
+        element = self.find_by_xpath(self.partner_41)
+        print(f'There is a partner {element.text}')
+
+    '''Method change region by КАМЧАТСКИЙ КРАЙ(41)'''
+
+    def change_region(self):
+        self.click_button(self.location)
+        self.click_button(self.region_41)
+        print('Регион изменен на Камчатский край')
 
 
 
-    #actions
-
-    def click_contacts_button(self):
-        self.get_contacts().click()
-        print('Нажата кнопка КОНТАКТЫ')
-
-    #Methods
-
-    def

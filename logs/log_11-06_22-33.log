@@ -1,0 +1,66 @@
+
+-----
+Test: tests/test_scenario_3.py::test_scenario_3 (call)
+Start time: 2024-11-06 22:33:43.803197
+Start name method: Scenario 3 start
+
+
+-----
+Error occurred at: 2024-11-06 22:34:06.407507
+Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF653E63B05+28005]
+	(No symbol) [0x00007FF653DC8400]
+	(No symbol) [0x00007FF653C6580A]
+	(No symbol) [0x00007FF653CB5A3E]
+	(No symbol) [0x00007FF653CB5D2C]
+	(No symbol) [0x00007FF653CFEA97]
+	(No symbol) [0x00007FF653CDBA7F]
+	(No symbol) [0x00007FF653CFB8B3]
+	(No symbol) [0x00007FF653CDB7E3]
+	(No symbol) [0x00007FF653CA75C8]
+	(No symbol) [0x00007FF653CA8731]
+	GetHandleVerifier [0x00007FF65415647D+3118813]
+	GetHandleVerifier [0x00007FF6541A6CD0+3448624]
+	GetHandleVerifier [0x00007FF65419CF4D+3408301]
+	GetHandleVerifier [0x00007FF653F2A45B+841403]
+	(No symbol) [0x00007FF653DD345F]
+	(No symbol) [0x00007FF653DCF4D4]
+	(No symbol) [0x00007FF653DCF66D]
+	(No symbol) [0x00007FF653DBEBC9]
+	BaseThreadInitThunk [0x00007FFBF3FC259D+29]
+	RtlUserThreadStart [0x00007FFBF5E4AF38+40]
+
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 39, in scroll_to_element
+    element =  WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, locator)))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF653E63B05+28005]
+	(No symbol) [0x00007FF653DC8400]
+	(No symbol) [0x00007FF653C6580A]
+	(No symbol) [0x00007FF653CB5A3E]
+	(No symbol) [0x00007FF653CB5D2C]
+	(No symbol) [0x00007FF653CFEA97]
+	(No symbol) [0x00007FF653CDBA7F]
+	(No symbol) [0x00007FF653CFB8B3]
+	(No symbol) [0x00007FF653CDB7E3]
+	(No symbol) [0x00007FF653CA75C8]
+	(No symbol) [0x00007FF653CA8731]
+	GetHandleVerifier [0x00007FF65415647D+3118813]
+	GetHandleVerifier [0x00007FF6541A6CD0+3448624]
+	GetHandleVerifier [0x00007FF65419CF4D+3408301]
+	GetHandleVerifier [0x00007FF653F2A45B+841403]
+	(No symbol) [0x00007FF653DD345F]
+	(No symbol) [0x00007FF653DCF4D4]
+	(No symbol) [0x00007FF653DCF66D]
+	(No symbol) [0x00007FF653DBEBC9]
+	BaseThreadInitThunk [0x00007FFBF3FC259D+29]
+	RtlUserThreadStart [0x00007FFBF5E4AF38+40]
+
+
+
+-----

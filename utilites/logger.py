@@ -1,10 +1,11 @@
 import datetime
 import os
+import traceback
 
 
 class Logger:
-    file_name = f"C:\\Users\\ajnaf\\PycharmProjects\\main_priject\\logs\\log_" + str(
-        datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")) + ".log"
+    file_name = f"C:\\Users\\ajnaf\\PycharmProjects\\tensor_test\\logs\\log_" + str(
+        datetime.datetime.now().strftime("%m-%d_%H-%M")) + ".log"
 
     @classmethod
     def write_log_to_file(cls, data: str):
@@ -28,6 +29,18 @@ class Logger:
         data_to_add = f"End time: {str(datetime.datetime.now())}\n"
         data_to_add += f"End name method: {method}\n"
         data_to_add += f"URL: {url}\n"
+        data_to_add += f"\n-----\n"
+
+        cls.write_log_to_file(data_to_add)
+
+    @classmethod
+    def log_error(cls, exception: Exception):
+        """Логирует ошибки, записывая их в файл вместе с Инф о traceback"""
+        data_to_add = f"\n-----\n"
+        data_to_add += f"Error occurred at: {str(datetime.datetime.now())}\n"
+        data_to_add += f"Error: {str(exception)}\n"
+        # Добавляем информацию о стеке вызовов
+        data_to_add += f"Traceback: {traceback.format_exc()}\n"
         data_to_add += f"\n-----\n"
 
         cls.write_log_to_file(data_to_add)

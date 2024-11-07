@@ -1,0 +1,12 @@
+Driver open
+Scenario 3 start
+Open: https://sbis.ru/
+Move to element with locator: //a[text()='Скачать локальные версии']
+Нажата кнопка СКАЧАТЬ ЛОКАЛЬНЫЕ ВЕРСИИ
+Assertion Error: Expected URL 'https://sbis.ru/download/', but got 'https://sbis.ru/download'
+Нажата кнопка Скачать (Exe 11.48 МБ) 
+Файл успешно скачан
+11.48   11.48
+Размер файла соответствует ожидаемому
+Scenario 3 end
+Driver close

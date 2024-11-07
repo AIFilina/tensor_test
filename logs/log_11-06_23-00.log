@@ -1,0 +1,18 @@
+
+-----
+Test: tests/test_scenario_3.py::test_scenario_3 (call)
+Start time: 2024-11-06 23:00:13.384268
+Start name method: Scenario 3 start
+
+
+-----
+Error occurred at: 2024-11-06 23:00:21.307510
+Error: Expected URL 'https://sbis.ru/download?tab=plugin&innerTab=default', but got 'https://sbis.ru/download'
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 90, in assert_url
+    assert get_url == result, f"Expected URL '{result}', but got '{get_url}'"
+           ^^^^^^^^^^^^^^^^^
+AssertionError: Expected URL 'https://sbis.ru/download?tab=plugin&innerTab=default', but got 'https://sbis.ru/download'
+
+
+-----

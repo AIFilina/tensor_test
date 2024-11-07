@@ -1,0 +1,41 @@
+
+-----
+Test: tests/test_scenario_1.py::test_scenario_1 (call)
+Start time: 2024-11-06 21:36:18.672772
+Start name method: Scenario 1 start
+
+End time: 2024-11-06 21:36:37.429899
+End name method: Scenario 1 end
+URL: https://tensor.ru/about
+
+-----
+
+-----
+Test: tests/test_scenario_2.py::test_scenario_2 (call)
+Start time: 2024-11-06 21:36:44.262457
+Start name method: Scenario 2 start
+
+
+-----
+Error occurred at: 2024-11-06 21:36:57.127290
+Error: Expected 'Камчатский край', but got 'Республика Татарстан'
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 76, in assert_word
+    assert value_word == result, f"Expected '{result}', but got '{value_word}'"
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected 'Камчатский край', but got 'Республика Татарстан'
+
+
+-----
+
+-----
+Error occurred at: 2024-11-06 21:36:57.138322
+Error: 
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 101, in assert_title
+    assert expected_title.lower() in self.driver.title.lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+-----

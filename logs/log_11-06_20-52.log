@@ -1,0 +1,35 @@
+
+-----
+Test: tests/test_scenario_2.py::test_scenario_2 (call)
+Start time: 2024-11-06 20:52:31.369841
+Start name method: Scenario 2 start
+
+
+-----
+Error occurred at: 2024-11-06 20:52:39.065489
+Error: Expected 'Камчатский край', but got 'Республика Татарстан'
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 76, in assert_word
+    assert value_word == result, f"Expected '{result}', but got '{value_word}'"
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected 'Камчатский край', but got 'Республика Татарстан'
+
+
+-----
+
+-----
+Error occurred at: 2024-11-06 20:52:39.072136
+Error: 
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 101, in assert_title
+    assert expected_title.lower() in self.driver.title.lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+-----
+End time: 2024-11-06 20:52:39.075053
+End name method: Scenario 2 end
+URL: https://sbis.ru/contacts/16-respublika-tatarstan?tab=clients
+
+-----

@@ -1,0 +1,100 @@
+
+-----
+Test: tests/test_scenario_1.py::test_scenario_1 (call)
+Start time: 2024-11-06 21:45:33.511556
+Start name method: Scenario 1 start
+
+
+-----
+Error occurred at: 2024-11-06 21:46:43.375133
+Error: Expected URL 'https://tensor.ru/about', but got 'https://tensor.ru/'
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 90, in assert_url
+    assert get_url == result, f"Expected URL '{result}', but got '{get_url}'"
+           ^^^^^^^^^^^^^^^^^
+AssertionError: Expected URL 'https://tensor.ru/about', but got 'https://tensor.ru/'
+
+
+-----
+
+-----
+Error occurred at: 2024-11-06 21:46:43.442914
+Error: Error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.92)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6029B3B05+28005]
+	(No symbol) [0x00007FF602918400]
+	(No symbol) [0x00007FF6027B580A]
+	(No symbol) [0x00007FF60278FA85]
+	(No symbol) [0x00007FF602832AD7]
+	(No symbol) [0x00007FF60284B1B1]
+	(No symbol) [0x00007FF60282B7E3]
+	(No symbol) [0x00007FF6027F75C8]
+	(No symbol) [0x00007FF6027F8731]
+	GetHandleVerifier [0x00007FF602CA647D+3118813]
+	GetHandleVerifier [0x00007FF602CF6CD0+3448624]
+	GetHandleVerifier [0x00007FF602CECF4D+3408301]
+	GetHandleVerifier [0x00007FF602A7A45B+841403]
+	(No symbol) [0x00007FF60292345F]
+	(No symbol) [0x00007FF60291F4D4]
+	(No symbol) [0x00007FF60291F66D]
+	(No symbol) [0x00007FF60290EBC9]
+	BaseThreadInitThunk [0x00007FFBF3FC259D+29]
+	RtlUserThreadStart [0x00007FFBF5E4AF38+40]
+
+Traceback: Traceback (most recent call last):
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\base\base_class.py", line 39, in scroll_to_element
+    element =  WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, locator)))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\.venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 156, in _predicate
+    return _element_if_visible(driver.find_element(*locator))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 766, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ajnaf\PycharmProjects\tensor_test\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.92)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6029B3B05+28005]
+	(No symbol) [0x00007FF602918400]
+	(No symbol) [0x00007FF6027B580A]
+	(No symbol) [0x00007FF60278FA85]
+	(No symbol) [0x00007FF602832AD7]
+	(No symbol) [0x00007FF60284B1B1]
+	(No symbol) [0x00007FF60282B7E3]
+	(No symbol) [0x00007FF6027F75C8]
+	(No symbol) [0x00007FF6027F8731]
+	GetHandleVerifier [0x00007FF602CA647D+3118813]
+	GetHandleVerifier [0x00007FF602CF6CD0+3448624]
+	GetHandleVerifier [0x00007FF602CECF4D+3408301]
+	GetHandleVerifier [0x00007FF602A7A45B+841403]
+	(No symbol) [0x00007FF60292345F]
+	(No symbol) [0x00007FF60291F4D4]
+	(No symbol) [0x00007FF60291F66D]
+	(No symbol) [0x00007FF60290EBC9]
+	BaseThreadInitThunk [0x00007FFBF3FC259D+29]
+	RtlUserThreadStart [0x00007FFBF5E4AF38+40]
+
+
+
+-----
+
+-----
+Test: tests/test_scenario_2.py::test_scenario_2 (call)
+Start time: 2024-11-06 21:46:46.163675
+Start name method: Scenario 2 start
+
+End time: 2024-11-06 21:46:55.613059
+End name method: Scenario 2 end
+URL: https://sbis.ru/contacts/41-kamchatskij-kraj?tab=clients
+
+-----

@@ -16,7 +16,6 @@ class Base:
 
     '''Method find_element'''
 
-
     def find_by_xpath(self, locator):
         return WebDriverWait(self.driver, 20).until(
             EC.visibility_of_element_located((By.XPATH, locator)))
@@ -30,8 +29,6 @@ class Base:
         except TimeoutException as e:
             print(f"TimeoutException: Element with locator {locator} is not clickable after 20 seconds.")
             Logger.log_error(e)
-
-
 
     '''Method scroll by element'''
 
@@ -49,6 +46,7 @@ class Base:
             Logger.log_error(f"Error: {str(e)}")
 
     """Method get current url"""
+
     def get_current_url(self):
         try:
             get_url = self.driver.current_url
@@ -57,8 +55,9 @@ class Base:
             print(f"Error getting current URL: {str(e)}")
             Logger.log_error(e)
 
-    """Method get url"""
-    def get_url(self,url):
+    """Method open url"""
+
+    def open_url(self,url):
         try:
             self.driver.get(url)
             print("Open: " + url)
@@ -83,6 +82,7 @@ class Base:
 
 
     """Method assert url"""
+
     def assert_url(self, result):
         try:
             get_url = self.driver.current_url
@@ -95,10 +95,24 @@ class Base:
             print(f"Error getting current URL: {str(e)}")
             Logger.log_error(e)
 
+    '''Method assert Title'''
+
     def assert_title(self,expected_title):
         try:
             assert expected_title.lower() in self.driver.title.lower()
+            print(f"Заголовок содержит информацию о '{expected_title}'")
         except AssertionError as e:
-            print(f"Заголовок не содержит информацию о регионе '{expected_title}'")
+            print(f"Заголовок не содержит информацию o '{expected_title}'")
+            print(f"Assertion Error: {str(e)}")
+            Logger.log_error(e)
+
+    '''Method assert info in url'''
+
+    def assert_info_in_url(self,expected_value):
+        try:
+            assert expected_value.lower() in self.driver.current_url.lower()
+            print(f'URL содержит в себе подстроку {expected_value}')
+        except AssertionError as e:
+            print(f"URL не содержит информацию о '{expected_value}'")
             print(f"Assertion Error: {str(e)}")
             Logger.log_error(e)

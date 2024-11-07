@@ -1,0 +1,17 @@
+Driver open
+Scenario 1 start
+Open: https://sbis.ru/
+Нажата кнопка КОНТАКТЫ
+Нажата кнопка "Еще 841 офис в России"
+URL содержит в себе подстроку https://sbis.ru/contacts
+Нажат БАНЕР ТЕНЗОР
+Good value URL
+Move to element with locator: //p[text()='Сила в людях']
+Good value: Сила в людях
+Нажата кнопка ПОДРОБНЕЕ
+Good value URL
+Move to element with locator: //h2[text()='Работаем']
+Good value: Работаем
+Все изображения имеют одинаковые размеры.
+Scenario 1 end
+Driver close

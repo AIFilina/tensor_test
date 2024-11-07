@@ -1,0 +1,14 @@
+Driver open
+Scenario 2 start
+Open: https://sbis.ru/
+Нажата кнопка КОНТАКТЫ
+Нажата кнопка "Еще 841 офис в России"
+Good value URL
+Good value: Республика Татарстан
+There is a partner СБИС - Казань
+Good value: Камчатский край
+Заголовок содержит информацию о 'Камчатский край'
+There is a partner СБИС - Камчатка
+URL содержит в себе подстроку 41
+Scenario 2 end
+Driver close
